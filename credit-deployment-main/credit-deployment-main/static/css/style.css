@@ -1,0 +1,221 @@
+@font-face {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  
+  p{
+    color: black !important;
+    font-family: Raleway-SemiBold, sans-serif !important;
+  
+  }
+  /* Overlay nền tối */
+#loginOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Màu tối */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nền overlay đen đặc */
+
+.overlayTitle {
+  position: absolute; 
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  color: 0e2f5f;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  z-index: 10000;
+}
+#loginOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../adu.png"); /* Đen hoàn toàn */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: cover; 
+  background-attachment: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hộp đăng nhập nổi bật */
+.loginBox {
+  background: linear-gradient(to right, #cdffd8, #94b9ff); 
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.95); /* Bóng đổ đậm và lớn */
+  max-height: 300px;
+  max-width: 420px;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation khi hiện */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.loginBox h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loginBox input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.loginBox button {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginBox button:hover {
+  background-color: #286090;
+}
+
+
+  body, html {
+      height: 100%;
+      font-family: Raleway-SemiBold, sans-serif;
+  }
+  
+  body{
+    background-image: url("../anhnen.jpg");
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover; 
+    background-attachment: fixed;
+    /* background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #d4876b, #4b7a7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  
+  a {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+  }
+  
+  .main{
+    margin-top: 0;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+  }
+  .highlight{
+    text-decoration: underline !important;
+    color: #9D50BB !important;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+      margin-bottom: 9px;
+  }
+  
+  p,.control-label {
+      font-family: Raleway-SemiBold;
+      font-size: 18px !important;
+      color: #666666;
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  .main_heading{
+    margin-top: -15px !important;
+    font-size: 50px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo{
+      height: 80px;
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      /* width: 50%; */
+  }
+  
+  .jumbotron{
+    margin-top:0;
+    padding-left: 20%;
+  }
+
+  input {
+    border-radius: 20px !important;
+    height: 43px !important;
+  }
+
+  select {
+    border-radius: 20px !important;
+    height: 43px !important;
+  }
+  
+  button {
+    border-radius: 20px !important;
+      outline: none !important;
+    height: 40px !important;
+    width: 100px;
+    color: rgb(255, 255, 255) !important;
+    background: #9D50BB !important;
+    background: -webkit-linear-gradient(to right, #ff5d00, #ff5d00) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5d00, #ff5d00) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  .bottom p{
+    color: black !important;
+    background: #F8F8FF;
+    width: 1145px;
+    margin: auto;
+    size: 10px;
+  
+  }
